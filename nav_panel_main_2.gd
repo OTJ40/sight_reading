@@ -245,3 +245,7 @@ func _enable_menu():
 		$HBoxContainer/NavPanel/Area2D/CollisionShape2D.shape.size.x = 300
 	if state == STATE.PLAY:
 		$HBoxContainer/NavPanel/Area2D/CollisionShape2D.shape.size.x = 82
+
+
+func _on_exit_button_button_up() -> void:
+	get_tree().quit(0)
